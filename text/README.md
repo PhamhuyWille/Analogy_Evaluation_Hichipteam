@@ -21,11 +21,14 @@ text/
 ## Installation
 
 ```bash
-cd text
+cd ..
 python -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r text\requirements.txt
 ```
+
+Shared setup and dataset download instructions are in the root
+[`README.md`](../README.md).
 
 ## Configuration
 
@@ -48,28 +51,6 @@ src/MS.py  -> qwen3-next-80b-a3b-thinking through DashScope
 src/M.py   -> qwen3-max through DashScope
 ```
 
-## Data Download
-
-Before running the scorers, download the dataset using the following script:
-
-```python
-from huggingface_hub import snapshot_download
-from datasets import load_dataset
-
-LOCAL_DIR = "challenge-dataset"
-
-# 1. Download everything (parquet and video folders) into one local directory
-snapshot_download(
-    repo_id="analogy-evaluation/challenge-dataset",
-    repo_type="dataset",
-    local_dir=LOCAL_DIR,
-)
-
-# 2. Load the splits from the downloaded parquet and save in load_from_disk format
-ds = load_dataset(LOCAL_DIR)
-ds.save_to_disk(LOCAL_DIR)
-```
-
 ## Running the Text Scorers
 
 Run from the `text/` folder.
@@ -77,19 +58,19 @@ Run from the `text/` folder.
 Target Concept Coverage:
 
 ```bash
-python src/TCC.py --split test
+python src/TCC.py --input ..\challenge-dataset --split test
 ```
 
 Mapping Strength:
 
 ```bash
-python src/MS.py --split test
+python src/MS.py --input ..\challenge-dataset --split test
 ```
 
 Metaphoricity:
 
 ```bash
-python src/M.py --split test
+python src/M.py --input ..\challenge-dataset --split test
 ```
 
 Merge the three score files into the final submission:
