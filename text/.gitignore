@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.idea/
+__pycache__/
+*.py[cod]
+
+challenge-dataset/
+
+# Local scratch files and credentials.
+baselines/data.py
+test_dashcope.py

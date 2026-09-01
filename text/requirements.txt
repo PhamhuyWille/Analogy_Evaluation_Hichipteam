@@ -1,0 +1,8 @@
+protobuf
+datasets
+scipy
+openai
+python-dotenv
+numpy
+pandas
+huggingface-hub
