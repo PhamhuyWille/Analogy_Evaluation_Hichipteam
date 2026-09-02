@@ -1,0 +1,540 @@
+2026-08-05 16:14:12 | INFO | Starting run for model=gemini-3.5-flash-lite split=test
+2026-08-05 16:14:12 | INFO | Log file: output\logs\gemini-3.5-flash-lite_test_20260805_161412.log
+2026-08-05 16:14:13 | INFO | Empirical VC distribution on labeled validation set: {0: np.int64(2), 1: np.int64(6), 2: np.int64(3), 3: np.int64(1)}
+2026-08-05 16:14:13 | INFO | Anchor pool (score -> validation row idxs): {1: [0, 1], 0: [3, 7], 2: [4, 6], 3: [8]}
+2026-08-05 16:14:13 | WARNING | Only 1 anchor(s) available for VC=3 (wanted 2) — labeled validation set doesn't have enough examples at this level.
+2026-08-05 16:14:13 | INFO | Uploading anchor video for VC=1: challenge-dataset\val_videos/val_0.mp4
+2026-08-05 16:14:23 | INFO | Uploading anchor video for VC=1: challenge-dataset\val_videos/val_1.mp4
+2026-08-05 16:14:30 | INFO | Uploading anchor video for VC=0: challenge-dataset\val_videos/val_3.mp4
+2026-08-05 16:14:36 | INFO | Uploading anchor video for VC=0: challenge-dataset\val_videos/val_7.mp4
+2026-08-05 16:14:43 | INFO | Uploading anchor video for VC=2: challenge-dataset\val_videos/val_4.mp4
+2026-08-05 16:14:52 | INFO | Uploading anchor video for VC=2: challenge-dataset\val_videos/val_6.mp4
+2026-08-05 16:14:58 | INFO | Uploading anchor video for VC=3: challenge-dataset\val_videos/val_8.mp4
+2026-08-05 16:15:06 | INFO | Loaded 62 examples from challenge-dataset
+2026-08-05 16:15:06 | INFO | [1/62] Concurrency (challenge-dataset\test_videos/test_0.mp4)
+2026-08-05 16:15:23 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:15:30 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:15:38 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:15:43 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:15:51 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:15:51 | INFO |     samples=[1, 1, 1, 2, 2] -> VC=1 (median)
+2026-08-05 16:15:52 | INFO |     -> {'id': 0, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:15:52 | INFO | [2/62] Domain Name System (DNS) (challenge-dataset\test_videos/test_1.mp4)
+2026-08-05 16:16:08 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:16:14 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:16:14 | WARNING | sample 3 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 45.191650126s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}
+2026-08-05 16:16:22 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:16:31 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:16:38 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:16:38 | INFO |     samples=[2, 2, 2, 2, 3] -> VC=2 (median)
+2026-08-05 16:16:40 | INFO |     -> {'id': 1, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:16:40 | INFO | [3/62] Hallucination (challenge-dataset\test_videos/test_2.mp4)
+2026-08-05 16:16:58 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:17:05 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:17:12 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:17:13 | WARNING | sample 4 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 46.773404314s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}
+2026-08-05 16:17:14 | WARNING | sample 4 attempt 2 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 45.624669914s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}
+2026-08-05 16:17:35 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:17:48 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:17:48 | INFO |     samples=[2, 2, 2, 2, 2] -> VC=2 (median)
+2026-08-05 16:17:50 | INFO |     -> {'id': 2, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:17:50 | INFO | [4/62] Overfitting (challenge-dataset\test_videos/test_3.mp4)
+2026-08-05 16:18:13 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:18:18 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:18:23 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:18:31 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:18:38 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:18:38 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1 (median)
+2026-08-05 16:18:40 | INFO |     -> {'id': 3, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:18:40 | INFO | [5/62] Reinforcement learning (challenge-dataset\test_videos/test_4.mp4)
+2026-08-05 16:18:58 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:19:05 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:19:05 | WARNING | sample 3 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 54.747879687s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}
+2026-08-05 16:19:06 | WARNING | sample 3 attempt 2 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 53.626782346s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}
+2026-08-05 16:19:08 | WARNING | sample 3 attempt 3 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 51.482458048s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51s'}]}}
+2026-08-05 16:19:12 | WARNING | sample 4 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 47.346351444s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}
+2026-08-05 16:19:13 | WARNING | sample 4 attempt 2 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 46.218562208s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}
+2026-08-05 16:19:22 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:19:29 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:19:29 | INFO |     samples=[1, 1, 1, 2] -> VC=1 (median)
+2026-08-05 16:19:30 | INFO |     -> {'id': 4, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:19:30 | INFO | [6/62] Transfer learning (challenge-dataset\test_videos/test_5.mp4)
+2026-08-05 16:19:45 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:19:52 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:19:58 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:20:04 | INFO |     sample 4/5 → VC=0
+2026-08-05 16:20:04 | WARNING | sample 5 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 55.45065879s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}
+2026-08-05 16:20:05 | WARNING | sample 5 attempt 2 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 54.287073949s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}
+2026-08-05 16:20:07 | WARNING | sample 5 attempt 3 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 52.161497633s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '52s'}]}}
+2026-08-05 16:20:11 | INFO |     samples=[1, 1, 1, 0] -> VC=1 (median)
+2026-08-05 16:20:14 | INFO |     -> {'id': 5, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:20:14 | INFO | [7/62] Universal Design for Learning (UDL) (challenge-dataset\test_videos/test_6.mp4)
+2026-08-05 16:20:31 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:20:38 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:20:45 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:20:50 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:20:57 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:20:57 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1 (median)
+2026-08-05 16:20:58 | INFO |     -> {'id': 6, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:20:58 | INFO | [8/62] backpropagation (challenge-dataset\test_videos/test_7.mp4)
+2026-08-05 16:21:23 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:21:39 | INFO |     sample 2/5 → VC=3
+2026-08-05 16:21:46 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:21:53 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:21:59 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:21:59 | INFO |     samples=[3, 3, 2, 2, 3] -> VC=3 (median)
+2026-08-05 16:22:01 | INFO |     -> {'id': 7, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:22:01 | INFO | [9/62] bag-of-words model (challenge-dataset\test_videos/test_8.mp4)
+2026-08-05 16:22:14 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:22:22 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:22:28 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:22:40 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:22:52 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:22:52 | INFO |     samples=[2, 2, 3, 1, 2] -> VC=2 (median)
+2026-08-05 16:22:54 | INFO |     -> {'id': 8, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:22:54 | INFO | [10/62] central processing unit (CPU) (challenge-dataset\test_videos/test_9.mp4)
+2026-08-05 16:23:15 | INFO |     sample 1/5 → VC=0
+2026-08-05 16:23:22 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:23:28 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:23:35 | INFO |     sample 4/5 → VC=0
+2026-08-05 16:23:41 | INFO |     sample 5/5 → VC=0
+2026-08-05 16:23:41 | INFO |     samples=[0, 1, 1, 0, 0] -> VC=0 (median)
+2026-08-05 16:23:43 | INFO |     -> {'id': 9, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 0, 'VA': 0, 'VE': 0}
+2026-08-05 16:23:43 | INFO | [11/62] data mining (challenge-dataset\test_videos/test_10.mp4)
+2026-08-05 16:24:01 | INFO |     sample 1/5 → VC=0
+2026-08-05 16:24:07 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:24:08 | WARNING | sample 3 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 51.900477579s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51s'}]}}
+2026-08-05 16:24:09 | WARNING | sample 3 attempt 2 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 50.781715885s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}
+2026-08-05 16:24:11 | WARNING | sample 3 attempt 3 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 48.63489568s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '48s'}]}}
+2026-08-05 16:24:22 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:24:30 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:24:30 | INFO |     samples=[0, 1, 1, 1] -> VC=1 (median)
+2026-08-05 16:24:32 | INFO |     -> {'id': 10, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:24:32 | INFO | [12/62] event handler (challenge-dataset\test_videos/test_11.mp4)
+2026-08-05 16:24:48 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:24:53 | INFO |     sample 2/5 → VC=3
+2026-08-05 16:24:58 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:25:04 | INFO |     sample 4/5 → VC=3
+2026-08-05 16:25:10 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:25:10 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3 (median)
+2026-08-05 16:25:11 | INFO |     -> {'id': 11, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:25:11 | INFO | [13/62] firewall (challenge-dataset\test_videos/test_12.mp4)
+2026-08-05 16:25:27 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:25:34 | INFO |     sample 2/5 → VC=3
+2026-08-05 16:25:40 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:25:46 | INFO |     sample 4/5 → VC=3
+2026-08-05 16:26:02 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:26:02 | INFO |     samples=[3, 3, 3, 3, 2] -> VC=3 (median)
+2026-08-05 16:26:04 | INFO |     -> {'id': 12, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:26:04 | INFO | [14/62] if-then statements (challenge-dataset\test_videos/test_13.mp4)
+2026-08-05 16:26:20 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:26:26 | INFO |     sample 2/5 → VC=3
+2026-08-05 16:26:33 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:26:41 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:26:49 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:26:49 | INFO |     samples=[3, 3, 1, 2, 2] -> VC=2 (median)
+2026-08-05 16:26:51 | INFO |     -> {'id': 13, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:26:51 | INFO | [15/62] object-oriented analysis and design (OOAD) (challenge-dataset\test_videos/test_14.mp4)
+2026-08-05 16:27:04 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:27:10 | INFO |     sample 2/5 → VC=0
+2026-08-05 16:27:11 | WARNING | sample 3 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 48.747986617s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '48s'}]}}
+2026-08-05 16:27:12 | WARNING | sample 3 attempt 2 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 47.610649018s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}
+2026-08-05 16:27:14 | WARNING | sample 3 attempt 3 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 45.466720141s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}
+2026-08-05 16:27:25 | INFO |     sample 4/5 → VC=0
+2026-08-05 16:27:30 | INFO |     sample 5/5 → VC=0
+2026-08-05 16:27:30 | INFO |     samples=[1, 0, 0, 0] -> VC=0 (median)
+2026-08-05 16:27:32 | INFO |     -> {'id': 14, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 0, 'VA': 0, 'VE': 0}
+2026-08-05 16:27:32 | INFO | [16/62] recursion (challenge-dataset\test_videos/test_15.mp4)
+2026-08-05 16:27:48 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:27:56 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:28:04 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:28:22 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:28:31 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:28:31 | INFO |     samples=[2, 2, 2, 1, 1] -> VC=2 (median)
+2026-08-05 16:28:33 | INFO |     -> {'id': 15, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:28:33 | INFO | [17/62] spiral model (challenge-dataset\test_videos/test_16.mp4)
+2026-08-05 16:28:49 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:28:55 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:29:05 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:29:11 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:29:19 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:29:19 | INFO |     samples=[2, 1, 1, 1, 1] -> VC=1 (median)
+2026-08-05 16:29:20 | INFO |     -> {'id': 16, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:29:20 | INFO | [18/62] symbolic computation (challenge-dataset\test_videos/test_17.mp4)
+2026-08-05 16:29:33 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:29:47 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:30:01 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:30:06 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:30:12 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:30:12 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1 (median)
+2026-08-05 16:30:14 | INFO |     -> {'id': 17, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:30:14 | INFO | [19/62] Concurrency (challenge-dataset\test_videos/test_18.mp4)
+2026-08-05 16:30:30 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:30:36 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:30:50 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:30:56 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:31:02 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:31:02 | INFO |     samples=[2, 1, 1, 1, 2] -> VC=1 (median)
+2026-08-05 16:31:04 | INFO |     -> {'id': 18, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:31:04 | INFO | [20/62] Domain Name System (DNS) (challenge-dataset\test_videos/test_19.mp4)
+2026-08-05 16:31:20 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:31:32 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:31:46 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:31:53 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:31:59 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:31:59 | INFO |     samples=[2, 2, 3, 2, 2] -> VC=2 (median)
+2026-08-05 16:32:01 | INFO |     -> {'id': 19, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:32:01 | INFO | [21/62] Hallucination (challenge-dataset\test_videos/test_20.mp4)
+2026-08-05 16:32:17 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:32:24 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:32:32 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:32:46 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:32:52 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:32:52 | INFO |     samples=[2, 2, 2, 2, 2] -> VC=2 (median)
+2026-08-05 16:32:53 | INFO |     -> {'id': 20, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:32:53 | INFO | [22/62] Reinforcement learning (challenge-dataset\test_videos/test_21.mp4)
+2026-08-05 16:33:10 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:33:17 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:33:33 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:33:40 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:33:46 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:33:46 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1 (median)
+2026-08-05 16:33:48 | INFO |     -> {'id': 21, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:33:48 | INFO | [23/62] backpropagation (challenge-dataset\test_videos/test_22.mp4)
+2026-08-05 16:34:12 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:34:25 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:34:32 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:34:38 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:34:44 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:34:44 | INFO |     samples=[2, 2, 3, 2, 3] -> VC=2 (median)
+2026-08-05 16:34:46 | INFO |     -> {'id': 22, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:34:46 | INFO | [24/62] bag-of-words model (challenge-dataset\test_videos/test_23.mp4)
+2026-08-05 16:35:00 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:35:08 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:35:15 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:35:20 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:35:27 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:35:27 | INFO |     samples=[1, 2, 2, 2, 1] -> VC=2 (median)
+2026-08-05 16:35:30 | INFO |     -> {'id': 23, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:35:30 | INFO | [25/62] central processing unit (CPU) (challenge-dataset\test_videos/test_24.mp4)
+2026-08-05 16:35:45 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:35:51 | INFO |     sample 2/5 → VC=0
+2026-08-05 16:35:56 | INFO |     sample 3/5 → VC=0
+2026-08-05 16:36:01 | INFO |     sample 4/5 → VC=0
+2026-08-05 16:36:01 | WARNING | sample 5 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 58.58865181s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}
+2026-08-05 16:36:02 | WARNING | sample 5 attempt 2 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 57.44973688s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '57s'}]}}
+2026-08-05 16:36:04 | WARNING | sample 5 attempt 3 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 55.318896362s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}
+2026-08-05 16:36:08 | INFO |     samples=[1, 0, 0, 0] -> VC=0 (median)
+2026-08-05 16:36:10 | INFO |     -> {'id': 24, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 0, 'VA': 0, 'VE': 0}
+2026-08-05 16:36:10 | INFO | [26/62] data mining (challenge-dataset\test_videos/test_25.mp4)
+2026-08-05 16:36:31 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:36:38 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:36:44 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:36:50 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:36:56 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:36:56 | INFO |     samples=[2, 1, 1, 1, 1] -> VC=1 (median)
+2026-08-05 16:36:57 | INFO |     -> {'id': 25, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:36:57 | INFO | [27/62] event handler (challenge-dataset\test_videos/test_26.mp4)
+2026-08-05 16:37:25 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:37:32 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:37:38 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:37:45 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:37:50 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:37:50 | INFO |     samples=[2, 2, 2, 2, 2] -> VC=2 (median)
+2026-08-05 16:37:52 | INFO |     -> {'id': 26, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:37:52 | INFO | [28/62] firewall (challenge-dataset\test_videos/test_27.mp4)
+2026-08-05 16:38:09 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:38:21 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:38:33 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:38:41 | INFO |     sample 4/5 → VC=3
+2026-08-05 16:38:50 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:38:50 | INFO |     samples=[3, 2, 1, 3, 3] -> VC=3 (median)
+2026-08-05 16:38:52 | INFO |     -> {'id': 27, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:38:52 | INFO | [29/62] if-then statements (challenge-dataset\test_videos/test_28.mp4)
+2026-08-05 16:39:34 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:40:47 | INFO |     sample 2/5 → VC=3
+2026-08-05 16:41:35 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:41:48 | INFO |     sample 4/5 → VC=3
+2026-08-05 16:42:12 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:42:12 | INFO |     samples=[3, 3, 2, 3, 3] -> VC=3 (median)
+2026-08-05 16:42:14 | INFO |     -> {'id': 28, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:42:14 | INFO | [30/62] quicksort (challenge-dataset\test_videos/test_29.mp4)
+2026-08-05 16:42:37 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:43:06 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:43:14 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:43:28 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:43:40 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:43:40 | INFO |     samples=[3, 2, 3, 2, 3] -> VC=3 (median)
+2026-08-05 16:43:42 | INFO |     -> {'id': 29, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:43:42 | INFO | [31/62] recursion (challenge-dataset\test_videos/test_30.mp4)
+2026-08-05 16:44:04 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:44:11 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:44:19 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:44:26 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:44:32 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:44:32 | INFO |     samples=[1, 1, 1, 1, 2] -> VC=1 (median)
+2026-08-05 16:44:34 | INFO |     -> {'id': 30, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:44:34 | INFO | [32/62] singleton variable (challenge-dataset\test_videos/test_31.mp4)
+2026-08-05 16:44:50 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:44:55 | INFO |     sample 2/5 → VC=3
+2026-08-05 16:45:03 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:45:10 | INFO |     sample 4/5 → VC=3
+2026-08-05 16:45:15 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:45:15 | INFO |     samples=[3, 3, 1, 3, 3] -> VC=3 (median)
+2026-08-05 16:45:17 | INFO |     -> {'id': 31, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:45:17 | INFO | [33/62] spiral model (challenge-dataset\test_videos/test_32.mp4)
+2026-08-05 16:45:33 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:45:39 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:45:45 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:45:52 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:46:09 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:46:09 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1 (median)
+2026-08-05 16:46:10 | INFO |     -> {'id': 32, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:46:10 | INFO | [34/62] Boolean (challenge-dataset\test_videos/test_33.mp4)
+2026-08-05 16:46:33 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:46:44 | INFO |     sample 2/5 → VC=3
+2026-08-05 16:46:57 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:47:04 | INFO |     sample 4/5 → VC=3
+2026-08-05 16:47:09 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:47:09 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3 (median)
+2026-08-05 16:47:10 | INFO |     -> {'id': 33, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:47:10 | INFO | [35/62] database (challenge-dataset\test_videos/test_34.mp4)
+2026-08-05 16:47:25 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:47:31 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:47:37 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:47:43 | INFO |     sample 4/5 → VC=3
+2026-08-05 16:47:49 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:47:49 | INFO |     samples=[3, 2, 2, 3, 2] -> VC=2 (median)
+2026-08-05 16:47:50 | INFO |     -> {'id': 34, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:47:50 | INFO | [36/62] encryption (challenge-dataset\test_videos/test_35.mp4)
+2026-08-05 16:48:06 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:48:33 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:48:49 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:48:56 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:49:03 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:49:03 | INFO |     samples=[3, 2, 3, 2, 2] -> VC=2 (median)
+2026-08-05 16:49:05 | INFO |     -> {'id': 35, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:49:05 | INFO | [37/62] identifier (challenge-dataset\test_videos/test_36.mp4)
+2026-08-05 16:49:28 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:49:38 | INFO |     sample 2/5 → VC=0
+2026-08-05 16:49:44 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:49:50 | INFO |     sample 4/5 → VC=1
+2026-08-05 16:49:55 | INFO |     sample 5/5 → VC=0
+2026-08-05 16:49:55 | INFO |     samples=[1, 0, 1, 1, 0] -> VC=1 (median)
+2026-08-05 16:49:57 | INFO |     -> {'id': 36, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:49:57 | INFO | [38/62] router (challenge-dataset\test_videos/test_37.mp4)
+2026-08-05 16:50:11 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:50:18 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:50:23 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:50:29 | INFO |     sample 4/5 → VC=3
+2026-08-05 16:50:49 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:50:49 | INFO |     samples=[3, 2, 3, 3, 3] -> VC=3 (median)
+2026-08-05 16:50:50 | INFO |     -> {'id': 37, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:50:50 | INFO | [39/62] string (challenge-dataset\test_videos/test_38.mp4)
+2026-08-05 16:51:11 | INFO |     sample 1/5 → VC=2
+2026-08-05 16:51:59 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:52:39 | INFO |     sample 3/5 → VC=1
+2026-08-05 16:53:05 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:53:21 | INFO |     sample 5/5 → VC=2
+2026-08-05 16:53:21 | INFO |     samples=[2, 1, 1, 2, 2] -> VC=2 (median)
+2026-08-05 16:53:23 | INFO |     -> {'id': 38, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 16:53:23 | INFO | [40/62] array (challenge-dataset\test_videos/test_39.mp4)
+2026-08-05 16:54:31 | INFO |     sample 1/5 → VC=3
+2026-08-05 16:55:05 | INFO |     sample 2/5 → VC=2
+2026-08-05 16:55:24 | INFO |     sample 3/5 → VC=3
+2026-08-05 16:55:43 | INFO |     sample 4/5 → VC=3
+2026-08-05 16:56:05 | INFO |     sample 5/5 → VC=3
+2026-08-05 16:56:05 | INFO |     samples=[3, 2, 3, 3, 3] -> VC=3 (median)
+2026-08-05 16:56:07 | INFO |     -> {'id': 39, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 16:56:07 | INFO | [41/62] recursive (challenge-dataset\test_videos/test_40.mp4)
+2026-08-05 16:56:35 | INFO |     sample 1/5 → VC=1
+2026-08-05 16:57:00 | INFO |     sample 2/5 → VC=1
+2026-08-05 16:57:50 | INFO |     sample 3/5 → VC=2
+2026-08-05 16:59:07 | INFO |     sample 4/5 → VC=2
+2026-08-05 16:59:49 | INFO |     sample 5/5 → VC=1
+2026-08-05 16:59:49 | INFO |     samples=[1, 1, 2, 2, 1] -> VC=1 (median)
+2026-08-05 16:59:50 | INFO |     -> {'id': 40, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 16:59:50 | INFO | [42/62] singleton variable (challenge-dataset\test_videos/test_41.mp4)
+2026-08-05 17:00:38 | INFO |     sample 1/5 → VC=3
+2026-08-05 17:01:00 | INFO |     sample 2/5 → VC=3
+2026-08-05 17:04:08 | INFO |     sample 3/5 → VC=3
+2026-08-05 17:06:36 | INFO |     sample 4/5 → VC=3
+2026-08-05 17:08:52 | INFO |     sample 5/5 → VC=3
+2026-08-05 17:08:52 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3 (median)
+2026-08-05 17:08:54 | INFO |     -> {'id': 41, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 17:08:54 | INFO | [43/62] quicksort (challenge-dataset\test_videos/test_42.mp4)
+2026-08-05 17:10:12 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:11:23 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:13:40 | INFO |     sample 3/5 → VC=1
+2026-08-05 17:14:28 | INFO |     sample 4/5 → VC=2
+2026-08-05 17:14:56 | INFO |     sample 5/5 → VC=2
+2026-08-05 17:14:56 | INFO |     samples=[2, 2, 1, 2, 2] -> VC=2 (median)
+2026-08-05 17:14:58 | INFO |     -> {'id': 42, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:14:58 | INFO | [44/62] Privilege and power (challenge-dataset\test_videos/test_43.mp4)
+2026-08-05 17:16:05 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:17:52 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:20:10 | INFO |     sample 3/5 → VC=2
+2026-08-05 17:20:20 | INFO |     sample 4/5 → VC=2
+2026-08-05 17:20:28 | INFO |     sample 5/5 → VC=2
+2026-08-05 17:20:28 | INFO |     samples=[2, 2, 2, 2, 2] -> VC=2 (median)
+2026-08-05 17:20:29 | INFO |     -> {'id': 43, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:20:29 | INFO | [45/62] Debugging (challenge-dataset\test_videos/test_44.mp4)
+2026-08-05 17:20:49 | INFO |     sample 1/5 → VC=3
+2026-08-05 17:20:57 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:21:04 | INFO |     sample 3/5 → VC=2
+2026-08-05 17:21:12 | INFO |     sample 4/5 → VC=2
+2026-08-05 17:21:12 | WARNING | sample 5 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 47.529389728s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}
+2026-08-05 17:21:13 | WARNING | sample 5 attempt 2 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 46.378566845s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}
+2026-08-05 17:22:44 | INFO |     sample 5/5 → VC=3
+2026-08-05 17:22:44 | INFO |     samples=[3, 2, 2, 2, 3] -> VC=2 (median)
+2026-08-05 17:22:46 | INFO |     -> {'id': 44, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:22:46 | INFO | [46/62] Turing test (challenge-dataset\test_videos/test_45.mp4)
+2026-08-05 17:23:01 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:23:09 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:23:16 | INFO |     sample 3/5 → VC=2
+2026-08-05 17:23:26 | INFO |     sample 4/5 → VC=3
+2026-08-05 17:23:33 | INFO |     sample 5/5 → VC=2
+2026-08-05 17:23:33 | INFO |     samples=[2, 2, 2, 3, 2] -> VC=2 (median)
+2026-08-05 17:23:35 | INFO |     -> {'id': 45, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:23:35 | INFO | [47/62] Loop (challenge-dataset\test_videos/test_46.mp4)
+2026-08-05 17:23:52 | INFO |     sample 1/5 → VC=3
+2026-08-05 17:23:59 | INFO |     sample 2/5 → VC=3
+2026-08-05 17:24:06 | INFO |     sample 3/5 → VC=3
+2026-08-05 17:24:36 | INFO |     sample 4/5 → VC=3
+2026-08-05 17:24:44 | INFO |     sample 5/5 → VC=3
+2026-08-05 17:24:44 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3 (median)
+2026-08-05 17:24:46 | INFO |     -> {'id': 46, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 17:24:46 | INFO | [48/62] Human-computer interaction (HCI) (challenge-dataset\test_videos/test_47.mp4)
+2026-08-05 17:25:01 | INFO |     sample 1/5 → VC=3
+2026-08-05 17:25:09 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:25:17 | INFO |     sample 3/5 → VC=3
+2026-08-05 17:25:26 | INFO |     sample 4/5 → VC=3
+2026-08-05 17:25:33 | INFO |     sample 5/5 → VC=2
+2026-08-05 17:25:33 | INFO |     samples=[3, 2, 3, 3, 2] -> VC=3 (median)
+2026-08-05 17:25:35 | INFO |     -> {'id': 47, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 17:25:35 | INFO | [49/62] Digital citizenship (challenge-dataset\test_videos/test_48.mp4)
+2026-08-05 17:26:00 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:26:09 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:26:20 | INFO |     sample 3/5 → VC=1
+2026-08-05 17:26:27 | INFO |     sample 4/5 → VC=1
+2026-08-05 17:26:36 | INFO |     sample 5/5 → VC=2
+2026-08-05 17:26:36 | INFO |     samples=[2, 2, 1, 1, 2] -> VC=2 (median)
+2026-08-05 17:26:38 | INFO |     -> {'id': 48, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:26:38 | INFO | [50/62] Documentation (challenge-dataset\test_videos/test_49.mp4)
+2026-08-05 17:26:57 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:27:07 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:27:16 | INFO |     sample 3/5 → VC=2
+2026-08-05 17:27:23 | INFO |     sample 4/5 → VC=2
+2026-08-05 17:27:42 | INFO |     sample 5/5 → VC=2
+2026-08-05 17:27:42 | INFO |     samples=[2, 2, 2, 2, 2] -> VC=2 (median)
+2026-08-05 17:27:44 | INFO |     -> {'id': 49, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:27:44 | INFO | [51/62] Assistive technology (challenge-dataset\test_videos/test_50.mp4)
+2026-08-05 17:28:01 | INFO |     sample 1/5 → VC=1
+2026-08-05 17:28:12 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:28:27 | INFO |     sample 3/5 → VC=1
+2026-08-05 17:28:35 | INFO |     sample 4/5 → VC=1
+2026-08-05 17:28:42 | INFO |     sample 5/5 → VC=1
+2026-08-05 17:28:42 | INFO |     samples=[1, 2, 1, 1, 1] -> VC=1 (median)
+2026-08-05 17:28:44 | INFO |     -> {'id': 50, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 17:28:44 | INFO | [52/62] Variable (challenge-dataset\test_videos/test_51.mp4)
+2026-08-05 17:29:02 | INFO |     sample 1/5 → VC=3
+2026-08-05 17:29:11 | INFO |     sample 2/5 → VC=3
+2026-08-05 17:29:18 | INFO |     sample 3/5 → VC=3
+2026-08-05 17:29:25 | INFO |     sample 4/5 → VC=3
+2026-08-05 17:29:33 | INFO |     sample 5/5 → VC=3
+2026-08-05 17:29:33 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3 (median)
+2026-08-05 17:29:35 | INFO |     -> {'id': 51, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 17:29:35 | INFO | [53/62] Large language models (LLMs) (challenge-dataset\test_videos/test_52.mp4)
+2026-08-05 17:29:56 | INFO |     sample 1/5 → VC=3
+2026-08-05 17:30:05 | INFO |     sample 2/5 → VC=3
+2026-08-05 17:30:13 | INFO |     sample 3/5 → VC=2
+2026-08-05 17:30:13 | WARNING | sample 4 attempt 1 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 46.131192628s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}
+2026-08-05 17:30:14 | WARNING | sample 4 attempt 2 failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite\nPlease retry in 45.005353062s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '250000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}
+2026-08-05 17:30:23 | INFO |     sample 4/5 → VC=3
+2026-08-05 17:30:33 | INFO |     sample 5/5 → VC=3
+2026-08-05 17:30:33 | INFO |     samples=[3, 3, 2, 3, 3] -> VC=3 (median)
+2026-08-05 17:30:35 | INFO |     -> {'id': 52, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 17:30:35 | INFO | [54/62] Latency (challenge-dataset\test_videos/test_53.mp4)
+2026-08-05 17:30:50 | INFO |     sample 1/5 → VC=3
+2026-08-05 17:30:57 | INFO |     sample 2/5 → VC=3
+2026-08-05 17:31:03 | INFO |     sample 3/5 → VC=3
+2026-08-05 17:31:10 | INFO |     sample 4/5 → VC=3
+2026-08-05 17:31:18 | INFO |     sample 5/5 → VC=3
+2026-08-05 17:31:18 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3 (median)
+2026-08-05 17:31:20 | INFO |     -> {'id': 53, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 17:31:20 | INFO | [55/62] Accessibility (challenge-dataset\test_videos/test_54.mp4)
+2026-08-05 17:31:40 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:31:51 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:31:59 | INFO |     sample 3/5 → VC=3
+2026-08-05 17:32:07 | INFO |     sample 4/5 → VC=1
+2026-08-05 17:32:18 | INFO |     sample 5/5 → VC=1
+2026-08-05 17:32:18 | INFO |     samples=[2, 2, 3, 1, 1] -> VC=2 (median)
+2026-08-05 17:32:21 | INFO |     -> {'id': 54, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:32:21 | INFO | [56/62] Cybersecurity (challenge-dataset\test_videos/test_55.mp4)
+2026-08-05 17:32:39 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:32:46 | INFO |     sample 2/5 → VC=3
+2026-08-05 17:32:54 | INFO |     sample 3/5 → VC=3
+2026-08-05 17:33:02 | INFO |     sample 4/5 → VC=3
+2026-08-05 17:33:17 | INFO |     sample 5/5 → VC=3
+2026-08-05 17:33:17 | INFO |     samples=[2, 3, 3, 3, 3] -> VC=3 (median)
+2026-08-05 17:33:19 | INFO |     -> {'id': 55, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 17:33:19 | INFO | [57/62] Neural networks (challenge-dataset\test_videos/test_56.mp4)
+2026-08-05 17:33:39 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:33:46 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:33:55 | INFO |     sample 3/5 → VC=3
+2026-08-05 17:34:03 | INFO |     sample 4/5 → VC=2
+2026-08-05 17:34:11 | INFO |     sample 5/5 → VC=2
+2026-08-05 17:34:11 | INFO |     samples=[2, 2, 3, 2, 2] -> VC=2 (median)
+2026-08-05 17:34:13 | INFO |     -> {'id': 56, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:34:13 | INFO | [58/62] Cyberbullying (challenge-dataset\test_videos/test_57.mp4)
+2026-08-05 17:34:31 | INFO |     sample 1/5 → VC=1
+2026-08-05 17:34:45 | INFO |     sample 2/5 → VC=1
+2026-08-05 17:34:55 | INFO |     sample 3/5 → VC=1
+2026-08-05 17:35:02 | INFO |     sample 4/5 → VC=1
+2026-08-05 17:35:09 | INFO |     sample 5/5 → VC=1
+2026-08-05 17:35:09 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1 (median)
+2026-08-05 17:35:11 | INFO |     -> {'id': 57, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 17:35:11 | INFO | [59/62] Function (challenge-dataset\test_videos/test_58.mp4)
+2026-08-05 17:35:39 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:35:49 | INFO |     sample 2/5 → VC=3
+2026-08-05 17:35:56 | INFO |     sample 3/5 → VC=2
+2026-08-05 17:36:04 | INFO |     sample 4/5 → VC=3
+2026-08-05 17:36:12 | INFO |     sample 5/5 → VC=3
+2026-08-05 17:36:12 | INFO |     samples=[2, 3, 2, 3, 3] -> VC=3 (median)
+2026-08-05 17:36:14 | INFO |     -> {'id': 58, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 17:36:14 | INFO | [60/62] Machine learning (challenge-dataset\test_videos/test_59.mp4)
+2026-08-05 17:36:40 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:36:51 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:37:05 | INFO |     sample 3/5 → VC=2
+2026-08-05 17:37:14 | INFO |     sample 4/5 → VC=2
+2026-08-05 17:37:21 | INFO |     sample 5/5 → VC=1
+2026-08-05 17:37:21 | INFO |     samples=[2, 2, 2, 2, 1] -> VC=2 (median)
+2026-08-05 17:37:23 | INFO |     -> {'id': 59, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:37:23 | INFO | [61/62] Bias (unconscious/systemic/algorithmic) (challenge-dataset\test_videos/test_60.mp4)
+2026-08-05 17:37:48 | INFO |     sample 1/5 → VC=1
+2026-08-05 17:38:01 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:38:17 | INFO |     sample 3/5 → VC=2
+2026-08-05 17:38:29 | INFO |     sample 4/5 → VC=2
+2026-08-05 17:38:38 | INFO |     sample 5/5 → VC=2
+2026-08-05 17:38:38 | INFO |     samples=[1, 2, 2, 2, 2] -> VC=2 (median)
+2026-08-05 17:38:40 | INFO |     -> {'id': 60, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:38:40 | INFO | [62/62] Troubleshooting (challenge-dataset\test_videos/test_61.mp4)
+2026-08-05 17:39:06 | INFO |     sample 1/5 → VC=2
+2026-08-05 17:39:20 | INFO |     sample 2/5 → VC=2
+2026-08-05 17:39:36 | INFO |     sample 3/5 → VC=1
+2026-08-05 17:39:50 | INFO |     sample 4/5 → VC=1
+2026-08-05 17:40:00 | INFO |     sample 5/5 → VC=2
+2026-08-05 17:40:00 | INFO |     samples=[2, 2, 1, 1, 2] -> VC=2 (median)
+2026-08-05 17:40:01 | INFO |     -> {'id': 61, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 17:40:13 | INFO | Wrote CSV submission: output/submission_VC_video_test.csv
+2026-08-05 17:40:13 | INFO | Preview:
+ id  TCC  MS  M  VC  VA  VE
+  0    0   0  0   1   0   0
+  1    0   0  0   2   0   0
+  2    0   0  0   2   0   0
+  3    0   0  0   1   0   0
+  4    0   0  0   1   0   0
+2026-08-05 17:40:17 | INFO | ========================================
+2026-08-05 17:40:17 | INFO |     metric    tau-b      rho
+2026-08-05 17:40:17 | INFO |         VC    0.000    0.000
+2026-08-05 17:40:17 | INFO | Completed run. Log path: output\logs\gemini-3.5-flash-lite_test_20260805_161412.log

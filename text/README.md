@@ -13,7 +13,6 @@ text/
     MS.py                 # MS scorer, DashScope, default model: qwen3-next-80b-a3b-thinking
     M.py                  # M scorer, DashScope, default model: qwen3-max
     final.py              # Merge TCC/MS/M scores into results/submission.csv
-  .env.example            # Public environment template, no real secrets
   requirements.txt        # Python dependencies
   results/                # Kept result files for the selected report runs
 ```
@@ -32,9 +31,15 @@ Shared setup and dataset download instructions are in the root
 
 ## Configuration
 
-Create `text/.env` from `text/.env.example` and fill in your own API
-credentials. TCC uses OpenRouter. MS and M use DashScope workspace routing. Do
-not commit `.env`.
+Create `.env` from `.env.example` **at the project root** and fill in your API
+credentials. TCC uses OpenRouter. MS and M use DashScope workspace routing.
+The text scripts auto-discover the root `.env` — no need to copy it into
+subdirectories. Do not commit `.env`.
+
+```bash
+copy .env.example .env
+# Edit .env → set OPENROUTER_API_KEY, DASHSCOPE_API_KEY, DASHSCOPE_WORKSPACE_ID
+```
 
 ```env
 OPENROUTER_API_KEY=your_openrouter_api_key_here

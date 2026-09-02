@@ -1,0 +1,205 @@
+2026-08-08 15:50:32 | INFO | Starting run for model=gemini-3.1-pro-preview split=test
+2026-08-08 15:50:32 | INFO | Log file: output\logs\gemini-3.1-pro-preview_test_20260808_155032.log
+2026-08-08 15:50:44 | INFO | Uploaded anchor for VA=1 (row 1): challenge-dataset\val_videos/val_1.mp4
+2026-08-08 15:50:52 | INFO | Uploaded anchor for VA=2 (row 2): challenge-dataset\val_videos/val_2.mp4
+2026-08-08 15:51:01 | INFO | Uploaded anchor for VA=3 (row 0): challenge-dataset\val_videos/val_0.mp4
+2026-08-08 15:51:01 | INFO | Anchor rows selected (score -> validation index): {3: 0, 1: 1, 2: 2}
+2026-08-08 15:51:01 | INFO | Loaded 62 examples from challenge-dataset
+2026-08-08 15:51:01 | INFO | [1/62] Concurrency (challenge-dataset\test_videos/test_0.mp4)
+2026-08-08 15:51:38 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:51:40 | INFO |     -> {'id': 0, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:51:40 | INFO | [2/62] Domain Name System (DNS) (challenge-dataset\test_videos/test_1.mp4)
+2026-08-08 15:52:09 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:52:11 | INFO |     -> {'id': 1, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:52:11 | INFO | [3/62] Hallucination (challenge-dataset\test_videos/test_2.mp4)
+2026-08-08 15:52:45 | INFO |     sample 1/1 → VA=2
+2026-08-08 15:52:46 | INFO |     -> {'id': 2, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 15:52:46 | INFO | [4/62] Overfitting (challenge-dataset\test_videos/test_3.mp4)
+2026-08-08 15:53:17 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:53:19 | INFO |     -> {'id': 3, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:53:19 | INFO | [5/62] Reinforcement learning (challenge-dataset\test_videos/test_4.mp4)
+2026-08-08 15:53:49 | INFO |     sample 1/1 → VA=2
+2026-08-08 15:53:51 | INFO |     -> {'id': 4, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 15:53:51 | INFO | [6/62] Transfer learning (challenge-dataset\test_videos/test_5.mp4)
+2026-08-08 15:54:24 | INFO |     sample 1/1 → VA=0
+2026-08-08 15:54:26 | INFO |     -> {'id': 5, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 15:54:26 | INFO | [7/62] Universal Design for Learning (UDL) (challenge-dataset\test_videos/test_6.mp4)
+2026-08-08 15:54:55 | INFO |     sample 1/1 → VA=2
+2026-08-08 15:54:57 | INFO |     -> {'id': 6, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 15:54:57 | INFO | [8/62] backpropagation (challenge-dataset\test_videos/test_7.mp4)
+2026-08-08 15:55:24 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:55:27 | INFO |     -> {'id': 7, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:55:27 | INFO | [9/62] bag-of-words model (challenge-dataset\test_videos/test_8.mp4)
+2026-08-08 15:56:04 | INFO |     sample 1/1 → VA=1
+2026-08-08 15:56:06 | INFO |     -> {'id': 8, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 15:56:06 | INFO | [10/62] central processing unit (CPU) (challenge-dataset\test_videos/test_9.mp4)
+2026-08-08 15:56:35 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:56:37 | INFO |     -> {'id': 9, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:56:37 | INFO | [11/62] data mining (challenge-dataset\test_videos/test_10.mp4)
+2026-08-08 15:57:15 | INFO |     sample 1/1 → VA=1
+2026-08-08 15:57:17 | INFO |     -> {'id': 10, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 15:57:17 | INFO | [12/62] event handler (challenge-dataset\test_videos/test_11.mp4)
+2026-08-08 15:57:41 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:57:43 | INFO |     -> {'id': 11, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:57:43 | INFO | [13/62] firewall (challenge-dataset\test_videos/test_12.mp4)
+2026-08-08 15:58:14 | INFO |     sample 1/1 → VA=2
+2026-08-08 15:58:16 | INFO |     -> {'id': 12, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 15:58:16 | INFO | [14/62] if-then statements (challenge-dataset\test_videos/test_13.mp4)
+2026-08-08 15:58:44 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:58:46 | INFO |     -> {'id': 13, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:58:46 | INFO | [15/62] object-oriented analysis and design (OOAD) (challenge-dataset\test_videos/test_14.mp4)
+2026-08-08 15:59:20 | INFO |     sample 1/1 → VA=2
+2026-08-08 15:59:22 | INFO |     -> {'id': 14, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 15:59:22 | INFO | [16/62] recursion (challenge-dataset\test_videos/test_15.mp4)
+2026-08-08 16:00:00 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:00:02 | INFO |     -> {'id': 15, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:00:02 | INFO | [17/62] spiral model (challenge-dataset\test_videos/test_16.mp4)
+2026-08-08 16:00:32 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:00:33 | INFO |     -> {'id': 16, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:00:33 | INFO | [18/62] symbolic computation (challenge-dataset\test_videos/test_17.mp4)
+2026-08-08 16:01:10 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:01:12 | INFO |     -> {'id': 17, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:01:12 | INFO | [19/62] Concurrency (challenge-dataset\test_videos/test_18.mp4)
+2026-08-08 16:01:45 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:01:47 | INFO |     -> {'id': 18, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:01:47 | INFO | [20/62] Domain Name System (DNS) (challenge-dataset\test_videos/test_19.mp4)
+2026-08-08 16:02:22 | INFO |     sample 1/1 → VA=0
+2026-08-08 16:02:24 | INFO |     -> {'id': 19, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 16:02:24 | INFO | [21/62] Hallucination (challenge-dataset\test_videos/test_20.mp4)
+2026-08-08 16:03:01 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:03:03 | INFO |     -> {'id': 20, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:03:03 | INFO | [22/62] Reinforcement learning (challenge-dataset\test_videos/test_21.mp4)
+2026-08-08 16:03:33 | INFO |     sample 1/1 → VA=0
+2026-08-08 16:03:35 | INFO |     -> {'id': 21, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 16:03:35 | INFO | [23/62] backpropagation (challenge-dataset\test_videos/test_22.mp4)
+2026-08-08 16:04:03 | INFO |     sample 1/1 → VA=0
+2026-08-08 16:04:05 | INFO |     -> {'id': 22, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 16:04:05 | INFO | [24/62] bag-of-words model (challenge-dataset\test_videos/test_23.mp4)
+2026-08-08 16:04:34 | INFO |     sample 1/1 → VA=0
+2026-08-08 16:04:35 | INFO |     -> {'id': 23, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 16:04:35 | INFO | [25/62] central processing unit (CPU) (challenge-dataset\test_videos/test_24.mp4)
+2026-08-08 16:05:14 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:05:16 | INFO |     -> {'id': 24, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:05:16 | INFO | [26/62] data mining (challenge-dataset\test_videos/test_25.mp4)
+2026-08-08 16:06:01 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:06:03 | INFO |     -> {'id': 25, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:06:03 | INFO | [27/62] event handler (challenge-dataset\test_videos/test_26.mp4)
+2026-08-08 16:06:34 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:06:36 | INFO |     -> {'id': 26, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:06:36 | INFO | [28/62] firewall (challenge-dataset\test_videos/test_27.mp4)
+2026-08-08 16:07:03 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:07:05 | INFO |     -> {'id': 27, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:07:05 | INFO | [29/62] if-then statements (challenge-dataset\test_videos/test_28.mp4)
+2026-08-08 16:07:39 | INFO |     sample 1/1 → VA=0
+2026-08-08 16:07:41 | INFO |     -> {'id': 28, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 16:07:41 | INFO | [30/62] quicksort (challenge-dataset\test_videos/test_29.mp4)
+2026-08-08 16:08:13 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:08:15 | INFO |     -> {'id': 29, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:08:15 | INFO | [31/62] recursion (challenge-dataset\test_videos/test_30.mp4)
+2026-08-08 16:08:44 | INFO |     sample 1/1 → VA=0
+2026-08-08 16:08:46 | INFO |     -> {'id': 30, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 16:08:46 | INFO | [32/62] singleton variable (challenge-dataset\test_videos/test_31.mp4)
+2026-08-08 16:09:14 | INFO |     sample 1/1 → VA=0
+2026-08-08 16:09:17 | INFO |     -> {'id': 31, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 16:09:17 | INFO | [33/62] spiral model (challenge-dataset\test_videos/test_32.mp4)
+2026-08-08 16:09:45 | INFO |     sample 1/1 → VA=0
+2026-08-08 16:09:46 | INFO |     -> {'id': 32, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 16:09:46 | INFO | [34/62] Boolean (challenge-dataset\test_videos/test_33.mp4)
+2026-08-08 16:10:09 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:10:11 | INFO |     -> {'id': 33, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:10:11 | INFO | [35/62] database (challenge-dataset\test_videos/test_34.mp4)
+2026-08-08 16:10:46 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:10:47 | INFO |     -> {'id': 34, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:10:47 | INFO | [36/62] encryption (challenge-dataset\test_videos/test_35.mp4)
+2026-08-08 16:11:19 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:11:21 | INFO |     -> {'id': 35, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:11:21 | INFO | [37/62] identifier (challenge-dataset\test_videos/test_36.mp4)
+2026-08-08 16:11:52 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:11:55 | INFO |     -> {'id': 36, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:11:55 | INFO | [38/62] router (challenge-dataset\test_videos/test_37.mp4)
+2026-08-08 16:12:22 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:12:24 | INFO |     -> {'id': 37, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:12:24 | INFO | [39/62] string (challenge-dataset\test_videos/test_38.mp4)
+2026-08-08 16:12:53 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:12:55 | INFO |     -> {'id': 38, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:12:55 | INFO | [40/62] array (challenge-dataset\test_videos/test_39.mp4)
+2026-08-08 16:13:21 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:13:23 | INFO |     -> {'id': 39, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:13:23 | INFO | [41/62] recursive (challenge-dataset\test_videos/test_40.mp4)
+2026-08-08 16:13:48 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:13:50 | INFO |     -> {'id': 40, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:13:50 | INFO | [42/62] singleton variable (challenge-dataset\test_videos/test_41.mp4)
+2026-08-08 16:14:16 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:14:18 | INFO |     -> {'id': 41, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:14:18 | INFO | [43/62] quicksort (challenge-dataset\test_videos/test_42.mp4)
+2026-08-08 16:14:55 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:14:57 | INFO |     -> {'id': 42, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:14:57 | INFO | [44/62] Privilege and power (challenge-dataset\test_videos/test_43.mp4)
+2026-08-08 16:15:30 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:15:31 | INFO |     -> {'id': 43, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:15:31 | INFO | [45/62] Debugging (challenge-dataset\test_videos/test_44.mp4)
+2026-08-08 16:16:07 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:16:09 | INFO |     -> {'id': 44, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:16:09 | INFO | [46/62] Turing test (challenge-dataset\test_videos/test_45.mp4)
+2026-08-08 16:16:43 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:16:45 | INFO |     -> {'id': 45, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:16:45 | INFO | [47/62] Loop (challenge-dataset\test_videos/test_46.mp4)
+2026-08-08 16:17:20 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:17:22 | INFO |     -> {'id': 46, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:17:22 | INFO | [48/62] Human-computer interaction (HCI) (challenge-dataset\test_videos/test_47.mp4)
+2026-08-08 16:17:58 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:17:59 | INFO |     -> {'id': 47, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:17:59 | INFO | [49/62] Digital citizenship (challenge-dataset\test_videos/test_48.mp4)
+2026-08-08 16:18:30 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:18:32 | INFO |     -> {'id': 48, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:18:32 | INFO | [50/62] Documentation (challenge-dataset\test_videos/test_49.mp4)
+2026-08-08 16:19:05 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:19:08 | INFO |     -> {'id': 49, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:19:08 | INFO | [51/62] Assistive technology (challenge-dataset\test_videos/test_50.mp4)
+2026-08-08 16:19:38 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:19:41 | INFO |     -> {'id': 50, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:19:41 | INFO | [52/62] Variable (challenge-dataset\test_videos/test_51.mp4)
+2026-08-08 16:20:09 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:20:11 | INFO |     -> {'id': 51, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:20:11 | INFO | [53/62] Large language models (LLMs) (challenge-dataset\test_videos/test_52.mp4)
+2026-08-08 16:34:36 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:34:38 | INFO |     -> {'id': 52, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:34:38 | INFO | [54/62] Latency (challenge-dataset\test_videos/test_53.mp4)
+2026-08-08 16:39:26 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:39:29 | INFO |     -> {'id': 53, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:39:29 | INFO | [55/62] Accessibility (challenge-dataset\test_videos/test_54.mp4)
+2026-08-08 16:42:44 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:42:46 | INFO |     -> {'id': 54, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:42:46 | INFO | [56/62] Cybersecurity (challenge-dataset\test_videos/test_55.mp4)
+2026-08-08 16:43:18 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:43:20 | INFO |     -> {'id': 55, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:43:20 | INFO | [57/62] Neural networks (challenge-dataset\test_videos/test_56.mp4)
+2026-08-08 16:55:12 | INFO |     sample 1/1 → VA=2
+2026-08-08 16:55:14 | INFO |     -> {'id': 56, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 16:55:14 | INFO | [58/62] Cyberbullying (challenge-dataset\test_videos/test_57.mp4)
+2026-08-08 16:55:51 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:55:53 | INFO |     -> {'id': 57, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:55:53 | INFO | [59/62] Function (challenge-dataset\test_videos/test_58.mp4)
+2026-08-08 16:56:18 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:56:20 | INFO |     -> {'id': 58, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:56:20 | INFO | [60/62] Machine learning (challenge-dataset\test_videos/test_59.mp4)
+2026-08-08 16:57:14 | INFO |     sample 1/1 → VA=1
+2026-08-08 16:57:15 | INFO |     -> {'id': 59, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 16:57:15 | INFO | [61/62] Bias (unconscious/systemic/algorithmic) (challenge-dataset\test_videos/test_60.mp4)
+2026-08-08 16:57:43 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:57:45 | INFO |     -> {'id': 60, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:57:45 | INFO | [62/62] Troubleshooting (challenge-dataset\test_videos/test_61.mp4)
+2026-08-08 16:58:14 | INFO |     sample 1/1 → VA=3
+2026-08-08 16:58:16 | INFO |     -> {'id': 61, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 16:58:22 | INFO | Wrote CSV submission: output/submission_VA_video_test.csv
+2026-08-08 16:58:22 | INFO | Preview:
+ id  TCC  MS  M  VC  VA  VE
+  0    0   0  0   0   3   0
+  1    0   0  0   0   3   0
+  2    0   0  0   0   2   0
+  3    0   0  0   0   3   0
+  4    0   0  0   0   2   0
+2026-08-08 16:58:27 | INFO | ========================================
+2026-08-08 16:58:27 | INFO |     metric    tau-b      rho
+2026-08-08 16:58:27 | INFO |         VA    0.000    0.000
+2026-08-08 16:58:27 | INFO | Completed run. Log path: output\logs\gemini-3.1-pro-preview_test_20260808_155032.log
