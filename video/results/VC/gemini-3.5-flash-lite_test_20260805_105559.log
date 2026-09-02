@@ -1,0 +1,517 @@
+2026-08-05 10:55:59 | INFO | Starting run for model=gemini-3.5-flash-lite split=test
+2026-08-05 10:55:59 | INFO | Log file: output\logs\gemini-3.5-flash-lite_test_20260805_105559.log
+2026-08-05 10:56:00 | INFO | Empirical VC distribution on labeled validation set: {0: np.int64(2), 1: np.int64(6), 2: np.int64(3), 3: np.int64(1)}
+2026-08-05 10:56:00 | INFO | Anchor pool (score -> validation row idx): {1: 0, 0: 3, 2: 4, 3: 8}
+2026-08-05 10:56:00 | INFO | Uploading anchor video for VC=1: challenge-dataset\val_videos/val_0.mp4
+2026-08-05 10:56:09 | INFO | Uploading anchor video for VC=0: challenge-dataset\val_videos/val_3.mp4
+2026-08-05 10:56:15 | INFO | Uploading anchor video for VC=2: challenge-dataset\val_videos/val_4.mp4
+2026-08-05 10:56:24 | INFO | Uploading anchor video for VC=3: challenge-dataset\val_videos/val_8.mp4
+2026-08-05 10:56:31 | INFO | Loaded 62 examples from challenge-dataset
+2026-08-05 10:56:31 | INFO | [1/62] Concurrency (challenge-dataset\test_videos/test_0.mp4)
+2026-08-05 10:56:48 | INFO |     sample 1/5 → VC=1
+2026-08-05 10:57:03 | INFO |     sample 2/5 → VC=1
+2026-08-05 10:57:13 | INFO |     sample 3/5 → VC=1
+2026-08-05 10:57:19 | INFO |     sample 4/5 → VC=1
+2026-08-05 10:57:24 | INFO |     sample 5/5 → VC=2
+2026-08-05 10:57:24 | INFO |     samples=[1, 1, 1, 1, 2] -> VC=1
+2026-08-05 10:57:26 | INFO |     -> {'id': 0, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 10:57:26 | INFO | [2/62] Domain Name System (DNS) (challenge-dataset\test_videos/test_1.mp4)
+2026-08-05 10:57:43 | INFO |     sample 1/5 → VC=1
+2026-08-05 10:57:48 | INFO |     sample 2/5 → VC=2
+2026-08-05 10:57:54 | INFO |     sample 3/5 → VC=2
+2026-08-05 10:58:00 | INFO |     sample 4/5 → VC=2
+2026-08-05 10:58:05 | INFO |     sample 5/5 → VC=2
+2026-08-05 10:58:05 | INFO |     samples=[1, 2, 2, 2, 2] -> VC=2
+2026-08-05 10:58:07 | INFO |     -> {'id': 1, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 10:58:07 | INFO | [3/62] Hallucination (challenge-dataset\test_videos/test_2.mp4)
+2026-08-05 10:58:32 | INFO |     sample 1/5 → VC=2
+2026-08-05 10:58:42 | INFO |     sample 2/5 → VC=2
+2026-08-05 10:58:51 | INFO |     sample 3/5 → VC=1
+2026-08-05 10:58:58 | INFO |     sample 4/5 → VC=1
+2026-08-05 10:59:11 | INFO |     sample 5/5 → VC=1
+2026-08-05 10:59:11 | INFO |     samples=[2, 2, 1, 1, 1] -> VC=1
+2026-08-05 10:59:13 | INFO |     -> {'id': 2, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 10:59:13 | INFO | [4/62] Overfitting (challenge-dataset\test_videos/test_3.mp4)
+2026-08-05 10:59:28 | INFO |     sample 1/5 → VC=1
+2026-08-05 10:59:33 | INFO |     sample 2/5 → VC=1
+2026-08-05 10:59:37 | INFO |     sample 3/5 → VC=1
+2026-08-05 10:59:41 | INFO |     sample 4/5 → VC=1
+2026-08-05 10:59:52 | INFO |     sample 5/5 → VC=1
+2026-08-05 10:59:52 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1
+2026-08-05 10:59:53 | INFO |     -> {'id': 3, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 10:59:53 | INFO | [5/62] Reinforcement learning (challenge-dataset\test_videos/test_4.mp4)
+2026-08-05 11:00:12 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:00:18 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:00:24 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:00:30 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:00:36 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:00:36 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1
+2026-08-05 11:00:37 | INFO |     -> {'id': 4, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:00:37 | INFO | [6/62] Transfer learning (challenge-dataset\test_videos/test_5.mp4)
+2026-08-05 11:00:51 | INFO |     sample 1/5 → VC=0
+2026-08-05 11:00:56 | INFO |     sample 2/5 → VC=0
+2026-08-05 11:01:00 | INFO |     sample 3/5 → VC=0
+2026-08-05 11:01:04 | INFO |     sample 4/5 → VC=0
+2026-08-05 11:01:09 | INFO |     sample 5/5 → VC=0
+2026-08-05 11:01:09 | INFO |     samples=[0, 0, 0, 0, 0] -> VC=0
+2026-08-05 11:01:10 | INFO |     -> {'id': 5, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 0, 'VA': 0, 'VE': 0}
+2026-08-05 11:01:10 | INFO | [7/62] Universal Design for Learning (UDL) (challenge-dataset\test_videos/test_6.mp4)
+2026-08-05 11:01:23 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:01:37 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:01:42 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:01:46 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:01:50 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:01:50 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1
+2026-08-05 11:01:52 | INFO |     -> {'id': 6, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:01:52 | INFO | [8/62] backpropagation (challenge-dataset\test_videos/test_7.mp4)
+2026-08-05 11:02:11 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:02:17 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:02:23 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:02:29 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:02:34 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:02:34 | INFO |     samples=[3, 1, 2, 2, 3] -> VC=2
+2026-08-05 11:02:35 | INFO |     -> {'id': 7, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:02:36 | INFO | [9/62] bag-of-words model (challenge-dataset\test_videos/test_8.mp4)
+2026-08-05 11:02:52 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:02:57 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:03:03 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:03:09 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:03:14 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:03:14 | INFO |     samples=[3, 2, 1, 1, 1] -> VC=1
+2026-08-05 11:03:16 | INFO |     -> {'id': 8, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:03:16 | INFO | [10/62] central processing unit (CPU) (challenge-dataset\test_videos/test_9.mp4)
+2026-08-05 11:03:34 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:03:40 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:03:45 | INFO |     sample 3/5 → VC=0
+2026-08-05 11:03:51 | INFO |     sample 4/5 → VC=0
+2026-08-05 11:03:56 | INFO |     sample 5/5 → VC=0
+2026-08-05 11:03:56 | INFO |     samples=[1, 1, 0, 0, 0] -> VC=0
+2026-08-05 11:03:58 | INFO |     -> {'id': 9, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 0, 'VA': 0, 'VE': 0}
+2026-08-05 11:03:58 | INFO | [11/62] data mining (challenge-dataset\test_videos/test_10.mp4)
+2026-08-05 11:04:14 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:04:19 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:04:25 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:04:31 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:04:37 | INFO |     sample 5/5 → VC=0
+2026-08-05 11:04:37 | INFO |     samples=[1, 1, 1, 1, 0] -> VC=1
+2026-08-05 11:04:39 | INFO |     -> {'id': 10, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:04:39 | INFO | [12/62] event handler (challenge-dataset\test_videos/test_11.mp4)
+2026-08-05 11:05:21 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:05:27 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:05:32 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:05:37 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:05:41 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:05:41 | INFO |     samples=[3, 2, 3, 3, 3] -> VC=3
+2026-08-05 11:05:43 | INFO |     -> {'id': 11, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:05:43 | INFO | [13/62] firewall (challenge-dataset\test_videos/test_12.mp4)
+2026-08-05 11:05:59 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:06:04 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:06:11 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:06:16 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:06:22 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:06:22 | INFO |     samples=[1, 2, 2, 2, 2] -> VC=2
+2026-08-05 11:06:24 | INFO |     -> {'id': 12, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:06:24 | INFO | [14/62] if-then statements (challenge-dataset\test_videos/test_13.mp4)
+2026-08-05 11:06:39 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:06:45 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:06:50 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:06:55 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:07:01 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:07:01 | INFO |     samples=[3, 3, 2, 3, 3] -> VC=3
+2026-08-05 11:07:02 | INFO |     -> {'id': 13, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:07:02 | INFO | [15/62] object-oriented analysis and design (OOAD) (challenge-dataset\test_videos/test_14.mp4)
+2026-08-05 11:07:14 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:07:19 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:07:25 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:07:35 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:07:41 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:07:41 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1
+2026-08-05 11:07:43 | INFO |     -> {'id': 14, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:07:43 | INFO | [16/62] recursion (challenge-dataset\test_videos/test_15.mp4)
+2026-08-05 11:08:22 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:08:27 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:08:33 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:08:39 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:08:46 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:08:46 | INFO |     samples=[2, 3, 2, 2, 1] -> VC=2
+2026-08-05 11:08:48 | INFO |     -> {'id': 15, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:08:49 | INFO | [17/62] spiral model (challenge-dataset\test_videos/test_16.mp4)
+2026-08-05 11:09:06 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:09:12 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:09:17 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:09:22 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:09:27 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:09:27 | INFO |     samples=[1, 1, 1, 2, 1] -> VC=1
+2026-08-05 11:09:29 | INFO |     -> {'id': 16, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:09:29 | INFO | [18/62] symbolic computation (challenge-dataset\test_videos/test_17.mp4)
+2026-08-05 11:09:43 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:09:47 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:09:58 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:10:03 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:10:08 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:10:08 | INFO |     samples=[2, 1, 1, 2, 2] -> VC=2
+2026-08-05 11:10:10 | INFO |     -> {'id': 17, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:10:10 | INFO | [19/62] Concurrency (challenge-dataset\test_videos/test_18.mp4)
+2026-08-05 11:10:25 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:10:31 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:10:37 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:10:41 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:10:47 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:10:47 | INFO |     samples=[1, 1, 2, 2, 2] -> VC=2
+2026-08-05 11:10:49 | INFO |     -> {'id': 18, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:10:49 | INFO | [20/62] Domain Name System (DNS) (challenge-dataset\test_videos/test_19.mp4)
+2026-08-05 11:11:05 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:11:19 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:11:25 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:11:31 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:11:38 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:11:38 | INFO |     samples=[2, 2, 2, 2, 3] -> VC=2
+2026-08-05 11:11:39 | INFO |     -> {'id': 19, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:11:39 | INFO | [21/62] Hallucination (challenge-dataset\test_videos/test_20.mp4)
+2026-08-05 11:11:51 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:11:58 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:12:02 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:12:08 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:12:14 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:12:14 | INFO |     samples=[3, 2, 2, 1, 3] -> VC=2
+2026-08-05 11:12:16 | INFO |     -> {'id': 20, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:12:16 | INFO | [22/62] Reinforcement learning (challenge-dataset\test_videos/test_21.mp4)
+2026-08-05 11:12:31 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:12:37 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:12:42 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:12:55 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:13:02 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:13:02 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1
+2026-08-05 11:13:03 | INFO |     -> {'id': 21, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:13:03 | INFO | [23/62] backpropagation (challenge-dataset\test_videos/test_22.mp4)
+2026-08-05 11:13:26 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:13:41 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:13:52 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:13:57 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:14:02 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:14:02 | INFO |     samples=[3, 2, 2, 2, 2] -> VC=2
+2026-08-05 11:14:03 | INFO |     -> {'id': 22, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:14:03 | INFO | [24/62] bag-of-words model (challenge-dataset\test_videos/test_23.mp4)
+2026-08-05 11:14:15 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:14:20 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:14:33 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:14:38 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:14:52 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:14:52 | INFO |     samples=[2, 3, 1, 2, 1] -> VC=1
+2026-08-05 11:14:54 | INFO |     -> {'id': 23, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:14:54 | INFO | [25/62] central processing unit (CPU) (challenge-dataset\test_videos/test_24.mp4)
+2026-08-05 11:15:18 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:15:22 | INFO |     sample 2/5 → VC=0
+2026-08-05 11:15:35 | INFO |     sample 3/5 → VC=0
+2026-08-05 11:15:47 | INFO |     sample 4/5 → VC=0
+2026-08-05 11:15:51 | INFO |     sample 5/5 → VC=0
+2026-08-05 11:15:51 | INFO |     samples=[1, 0, 0, 0, 0] -> VC=0
+2026-08-05 11:15:53 | INFO |     -> {'id': 24, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 0, 'VA': 0, 'VE': 0}
+2026-08-05 11:15:53 | INFO | [26/62] data mining (challenge-dataset\test_videos/test_25.mp4)
+2026-08-05 11:16:15 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:16:21 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:16:26 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:16:31 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:16:38 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:16:38 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1
+2026-08-05 11:16:40 | INFO |     -> {'id': 25, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:16:40 | INFO | [27/62] event handler (challenge-dataset\test_videos/test_26.mp4)
+2026-08-05 11:16:51 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:16:56 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:16:59 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:17:03 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:17:09 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:17:09 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3
+2026-08-05 11:17:10 | INFO |     -> {'id': 26, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:17:10 | INFO | [28/62] firewall (challenge-dataset\test_videos/test_27.mp4)
+2026-08-05 11:17:23 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:17:28 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:17:32 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:17:38 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:17:42 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:17:42 | INFO |     samples=[2, 3, 3, 2, 3] -> VC=3
+2026-08-05 11:17:44 | INFO |     -> {'id': 27, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:17:44 | INFO | [29/62] if-then statements (challenge-dataset\test_videos/test_28.mp4)
+2026-08-05 11:17:59 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:18:04 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:18:10 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:18:15 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:18:21 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:18:21 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3
+2026-08-05 11:18:22 | INFO |     -> {'id': 28, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:18:22 | INFO | [30/62] quicksort (challenge-dataset\test_videos/test_29.mp4)
+2026-08-05 11:18:39 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:18:46 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:18:50 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:18:55 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:19:01 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:19:01 | INFO |     samples=[3, 3, 2, 3, 3] -> VC=3
+2026-08-05 11:19:02 | INFO |     -> {'id': 29, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:19:02 | INFO | [31/62] recursion (challenge-dataset\test_videos/test_30.mp4)
+2026-08-05 11:19:16 | INFO |     sample 1/5 → VC=0
+2026-08-05 11:19:23 | INFO |     sample 2/5 → VC=0
+2026-08-05 11:19:36 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:19:41 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:19:54 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:19:54 | INFO |     samples=[0, 0, 1, 1, 1] -> VC=1
+2026-08-05 11:19:56 | INFO |     -> {'id': 30, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:19:56 | INFO | [32/62] singleton variable (challenge-dataset\test_videos/test_31.mp4)
+2026-08-05 11:20:10 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:20:17 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:20:23 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:20:29 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:20:35 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:20:35 | INFO |     samples=[3, 2, 1, 3, 1] -> VC=1
+2026-08-05 11:20:36 | INFO |     -> {'id': 31, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:20:36 | INFO | [33/62] spiral model (challenge-dataset\test_videos/test_32.mp4)
+2026-08-05 11:20:50 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:20:56 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:21:09 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:21:15 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:21:20 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:21:20 | INFO |     samples=[1, 1, 1, 1, 2] -> VC=1
+2026-08-05 11:21:22 | INFO |     -> {'id': 32, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:21:22 | INFO | [34/62] Boolean (challenge-dataset\test_videos/test_33.mp4)
+2026-08-05 11:21:35 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:21:39 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:21:43 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:21:49 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:21:54 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:21:54 | INFO |     samples=[2, 3, 3, 3, 2] -> VC=3
+2026-08-05 11:21:56 | INFO |     -> {'id': 33, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:21:56 | INFO | [35/62] database (challenge-dataset\test_videos/test_34.mp4)
+2026-08-05 11:22:09 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:22:14 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:22:27 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:22:40 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:22:45 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:22:45 | INFO |     samples=[3, 2, 3, 2, 2] -> VC=2
+2026-08-05 11:22:47 | INFO |     -> {'id': 34, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:22:47 | INFO | [36/62] encryption (challenge-dataset\test_videos/test_35.mp4)
+2026-08-05 11:23:00 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:23:06 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:23:12 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:23:27 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:23:33 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:23:33 | INFO |     samples=[2, 2, 2, 3, 3] -> VC=2
+2026-08-05 11:23:34 | INFO |     -> {'id': 35, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:23:34 | INFO | [37/62] identifier (challenge-dataset\test_videos/test_36.mp4)
+2026-08-05 11:23:48 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:24:02 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:24:07 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:24:12 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:24:17 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:24:17 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1
+2026-08-05 11:24:19 | INFO |     -> {'id': 36, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:24:19 | INFO | [38/62] router (challenge-dataset\test_videos/test_37.mp4)
+2026-08-05 11:24:36 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:24:40 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:24:45 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:24:50 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:24:56 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:24:56 | INFO |     samples=[3, 3, 2, 1, 2] -> VC=2
+2026-08-05 11:24:58 | INFO |     -> {'id': 37, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:24:58 | INFO | [39/62] string (challenge-dataset\test_videos/test_38.mp4)
+2026-08-05 11:25:23 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:25:35 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:25:43 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:25:48 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:25:55 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:25:55 | INFO |     samples=[2, 2, 2, 2, 2] -> VC=2
+2026-08-05 11:25:56 | INFO |     -> {'id': 38, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:25:56 | INFO | [40/62] array (challenge-dataset\test_videos/test_39.mp4)
+2026-08-05 11:26:10 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:26:14 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:26:19 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:26:23 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:26:28 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:26:28 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3
+2026-08-05 11:26:30 | INFO |     -> {'id': 39, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:26:30 | INFO | [41/62] recursive (challenge-dataset\test_videos/test_40.mp4)
+2026-08-05 11:26:44 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:26:50 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:27:04 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:27:10 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:27:16 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:27:16 | INFO |     samples=[1, 2, 2, 1, 3] -> VC=1
+2026-08-05 11:27:17 | INFO |     -> {'id': 40, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:27:17 | INFO | [42/62] singleton variable (challenge-dataset\test_videos/test_41.mp4)
+2026-08-05 11:27:36 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:27:41 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:27:47 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:27:53 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:27:57 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:27:57 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3
+2026-08-05 11:27:58 | INFO |     -> {'id': 41, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:27:58 | INFO | [43/62] quicksort (challenge-dataset\test_videos/test_42.mp4)
+2026-08-05 11:28:17 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:28:24 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:28:30 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:28:35 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:28:40 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:28:40 | INFO |     samples=[3, 3, 2, 3, 3] -> VC=3
+2026-08-05 11:28:41 | INFO |     -> {'id': 42, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:28:41 | INFO | [44/62] Privilege and power (challenge-dataset\test_videos/test_43.mp4)
+2026-08-05 11:28:57 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:29:11 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:29:23 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:29:30 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:29:36 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:29:36 | INFO |     samples=[2, 2, 2, 2, 3] -> VC=2
+2026-08-05 11:29:38 | INFO |     -> {'id': 43, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:29:38 | INFO | [45/62] Debugging (challenge-dataset\test_videos/test_44.mp4)
+2026-08-05 11:30:00 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:30:08 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:30:13 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:30:25 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:30:30 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:30:30 | INFO |     samples=[2, 3, 3, 3, 3] -> VC=3
+2026-08-05 11:30:32 | INFO |     -> {'id': 44, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:30:32 | INFO | [46/62] Turing test (challenge-dataset\test_videos/test_45.mp4)
+2026-08-05 11:30:49 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:31:06 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:31:12 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:31:25 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:31:31 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:31:31 | INFO |     samples=[3, 2, 2, 2, 3] -> VC=2
+2026-08-05 11:31:33 | INFO |     -> {'id': 45, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:31:33 | INFO | [47/62] Loop (challenge-dataset\test_videos/test_46.mp4)
+2026-08-05 11:31:52 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:31:58 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:32:03 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:32:08 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:32:18 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:32:18 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3
+2026-08-05 11:32:20 | INFO |     -> {'id': 46, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:32:20 | INFO | [48/62] Human-computer interaction (HCI) (challenge-dataset\test_videos/test_47.mp4)
+2026-08-05 11:32:36 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:32:40 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:32:45 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:32:58 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:33:04 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:33:04 | INFO |     samples=[3, 3, 3, 1, 3] -> VC=3
+2026-08-05 11:33:06 | INFO |     -> {'id': 47, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:33:06 | INFO | [49/62] Digital citizenship (challenge-dataset\test_videos/test_48.mp4)
+2026-08-05 11:33:22 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:33:27 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:33:31 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:33:46 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:33:52 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:33:52 | INFO |     samples=[1, 1, 1, 2, 1] -> VC=1
+2026-08-05 11:33:54 | INFO |     -> {'id': 48, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:33:54 | INFO | [50/62] Documentation (challenge-dataset\test_videos/test_49.mp4)
+2026-08-05 11:34:10 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:34:15 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:34:21 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:34:27 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:34:33 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:34:33 | INFO |     samples=[3, 2, 2, 2, 3] -> VC=2
+2026-08-05 11:34:34 | INFO |     -> {'id': 49, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:34:34 | INFO | [51/62] Assistive technology (challenge-dataset\test_videos/test_50.mp4)
+2026-08-05 11:34:52 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:34:59 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:35:14 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:35:19 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:35:31 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:35:31 | INFO |     samples=[1, 1, 2, 1, 1] -> VC=1
+2026-08-05 11:35:33 | INFO |     -> {'id': 50, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:35:33 | INFO | [52/62] Variable (challenge-dataset\test_videos/test_51.mp4)
+2026-08-05 11:35:48 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:35:54 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:35:59 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:36:05 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:36:10 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:36:10 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3
+2026-08-05 11:36:12 | INFO |     -> {'id': 51, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:36:12 | INFO | [53/62] Large language models (LLMs) (challenge-dataset\test_videos/test_52.mp4)
+2026-08-05 11:36:28 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:36:41 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:36:46 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:36:51 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:36:55 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:36:55 | INFO |     samples=[3, 3, 3, 2, 3] -> VC=3
+2026-08-05 11:36:57 | INFO |     -> {'id': 52, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:36:57 | INFO | [54/62] Latency (challenge-dataset\test_videos/test_53.mp4)
+2026-08-05 11:37:17 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:37:30 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:37:38 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:37:43 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:37:47 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:37:47 | INFO |     samples=[3, 2, 2, 3, 3] -> VC=3
+2026-08-05 11:37:49 | INFO |     -> {'id': 53, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:37:49 | INFO | [55/62] Accessibility (challenge-dataset\test_videos/test_54.mp4)
+2026-08-05 11:38:08 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:38:20 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:38:26 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:38:32 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:38:38 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:38:38 | INFO |     samples=[1, 3, 2, 2, 3] -> VC=2
+2026-08-05 11:38:40 | INFO |     -> {'id': 54, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:38:40 | INFO | [56/62] Cybersecurity (challenge-dataset\test_videos/test_55.mp4)
+2026-08-05 11:38:58 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:39:12 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:39:18 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:39:22 | INFO |     sample 4/5 → VC=3
+2026-08-05 11:39:34 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:39:34 | INFO |     samples=[3, 3, 3, 3, 3] -> VC=3
+2026-08-05 11:39:36 | INFO |     -> {'id': 55, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:39:36 | INFO | [57/62] Neural networks (challenge-dataset\test_videos/test_56.mp4)
+2026-08-05 11:39:53 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:40:07 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:40:12 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:40:24 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:40:30 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:40:30 | INFO |     samples=[2, 1, 2, 2, 2] -> VC=2
+2026-08-05 11:40:31 | INFO |     -> {'id': 56, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:40:31 | INFO | [58/62] Cyberbullying (challenge-dataset\test_videos/test_57.mp4)
+2026-08-05 11:40:47 | INFO |     sample 1/5 → VC=1
+2026-08-05 11:40:53 | INFO |     sample 2/5 → VC=1
+2026-08-05 11:40:58 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:41:04 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:41:08 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:41:08 | INFO |     samples=[1, 1, 1, 1, 1] -> VC=1
+2026-08-05 11:41:09 | INFO |     -> {'id': 57, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:41:09 | INFO | [59/62] Function (challenge-dataset\test_videos/test_58.mp4)
+2026-08-05 11:41:25 | INFO |     sample 1/5 → VC=3
+2026-08-05 11:41:41 | INFO |     sample 2/5 → VC=3
+2026-08-05 11:41:46 | INFO |     sample 3/5 → VC=3
+2026-08-05 11:41:51 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:42:05 | INFO |     sample 5/5 → VC=3
+2026-08-05 11:42:05 | INFO |     samples=[3, 3, 3, 2, 3] -> VC=3
+2026-08-05 11:42:07 | INFO |     -> {'id': 58, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 3, 'VA': 0, 'VE': 0}
+2026-08-05 11:42:07 | INFO | [60/62] Machine learning (challenge-dataset\test_videos/test_59.mp4)
+2026-08-05 11:42:24 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:42:31 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:42:36 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:42:42 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:42:49 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:42:49 | INFO |     samples=[2, 2, 1, 2, 2] -> VC=2
+2026-08-05 11:42:51 | INFO |     -> {'id': 59, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:42:51 | INFO | [61/62] Bias (unconscious/systemic/algorithmic) (challenge-dataset\test_videos/test_60.mp4)
+2026-08-05 11:43:07 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:43:12 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:43:17 | INFO |     sample 3/5 → VC=1
+2026-08-05 11:43:24 | INFO |     sample 4/5 → VC=1
+2026-08-05 11:43:30 | INFO |     sample 5/5 → VC=1
+2026-08-05 11:43:30 | INFO |     samples=[2, 2, 1, 1, 1] -> VC=1
+2026-08-05 11:43:31 | INFO |     -> {'id': 60, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 1, 'VA': 0, 'VE': 0}
+2026-08-05 11:43:31 | INFO | [62/62] Troubleshooting (challenge-dataset\test_videos/test_61.mp4)
+2026-08-05 11:43:52 | INFO |     sample 1/5 → VC=2
+2026-08-05 11:44:00 | INFO |     sample 2/5 → VC=2
+2026-08-05 11:44:07 | INFO |     sample 3/5 → VC=2
+2026-08-05 11:44:13 | INFO |     sample 4/5 → VC=2
+2026-08-05 11:44:20 | INFO |     sample 5/5 → VC=2
+2026-08-05 11:44:20 | INFO |     samples=[2, 2, 2, 2, 2] -> VC=2
+2026-08-05 11:44:21 | INFO |     -> {'id': 61, 'TCC': 0, 'MS': 0, 'M': 0, 'VC': 2, 'VA': 0, 'VE': 0}
+2026-08-05 11:44:28 | INFO | Wrote CSV submission: output/submission_VC_video_test.csv
+2026-08-05 11:44:28 | INFO | Preview:
+ id  TCC  MS  M  VC  VA  VE
+  0    0   0  0   1   0   0
+  1    0   0  0   2   0   0
+  2    0   0  0   1   0   0
+  3    0   0  0   1   0   0
+  4    0   0  0   1   0   0
+2026-08-05 11:44:32 | INFO | ========================================
+2026-08-05 11:44:32 | INFO |     metric    tau-b      rho
+2026-08-05 11:44:32 | INFO |         VC    0.000    0.000
+2026-08-05 11:44:32 | INFO | Completed run. Log path: output\logs\gemini-3.5-flash-lite_test_20260805_105559.log

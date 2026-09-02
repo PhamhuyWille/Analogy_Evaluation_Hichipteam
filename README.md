@@ -8,27 +8,45 @@ commands are documented inside each track folder.
 
 ```text
 .
-  README.md              # Shared setup and dataset instructions
-  challenge-dataset/     # Local downloaded dataset, ignored by Git
-  text/                  # Text-track scoring pipeline and retained results
-  video/                 # Video-track workspace, ignored when local-only
+├── README.md                # Shared setup and dataset instructions
+├── .gitignore
+├── challenge-dataset/       # Local downloaded dataset, ignored by Git
+├── .env.example             # API keys template (copy to .env)
+├── text/                    # Text-track scoring pipeline and results
+│   ├── src/                 # TCC, MS, M scorers + merge script
+│   ├── results/             # Retained result files
+│   ├── README.md
+│   └── requirements.txt
+├── video/                   # Video-track scoring pipeline and results
+│   ├── src/                 # VA, VC, VE scorers + pipeline script
+│   ├── results/             # Retained result files
+│   ├── README.md
+│   └── requirements.txt
+├── notebook/                # Exploratory notebooks
+│   ├── data.ipynb
+│   ├── distribution.ipynb
+│   └── submission.ipynb
+└── submission/              # Final submission CSVs
 ```
 
-## Common Setup
-
-Create one Python environment from the repository root. The current runnable
-pipeline is the text track, so install its dependencies:
+## Quick Start
 
 ```bash
+# 1. Create environment
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r text\requirements.txt
+pip install -r video\requirements.txt
+
+# 2. Configure API keys
+copy .env.example .env
+# Edit .env and fill in your real API keys
 ```
 
 ## Data Download
 
 Download the official dataset once at the repository root. The same
-`challenge-dataset/` directory can be used by both text and video experiments.
+`challenge-dataset/` directory is used by both text and video experiments.
 
 ```python
 from huggingface_hub import snapshot_download
@@ -48,4 +66,5 @@ ds.save_to_disk(LOCAL_DIR)
 
 ## Track Instructions
 
-Text-track commands and API configuration are in [`text/README.md`](text/README.md).
+- Text-track: [`text/README.md`](text/README.md)
+- Video-track: [`video/README.md`](video/README.md)

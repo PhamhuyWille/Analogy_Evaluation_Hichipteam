@@ -1,0 +1,55 @@
+2026-08-08 15:40:04 | INFO | Starting run for model=gemini-3.1-pro-preview split=validation
+2026-08-08 15:40:04 | INFO | Log file: output\logs\gemini-3.1-pro-preview_validation_20260808_154004.log
+2026-08-08 15:40:15 | INFO | Uploaded anchor for VA=1 (row 1): challenge-dataset\val_videos/val_1.mp4
+2026-08-08 15:40:24 | INFO | Uploaded anchor for VA=2 (row 2): challenge-dataset\val_videos/val_2.mp4
+2026-08-08 15:40:36 | INFO | Uploaded anchor for VA=3 (row 0): challenge-dataset\val_videos/val_0.mp4
+2026-08-08 15:40:36 | INFO | Anchor rows selected (score -> validation index): {3: 0, 1: 1, 2: 2}
+2026-08-08 15:40:36 | INFO | Loaded 12 examples from challenge-dataset
+2026-08-08 15:40:36 | INFO | [1/12] Overfitting (challenge-dataset\val_videos/val_0.mp4)
+2026-08-08 15:42:27 | INFO |     sample 1/1 → VA=2
+2026-08-08 15:42:28 | INFO |     -> {'id': 0, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 15:42:28 | INFO | [2/12] Transfer learning (challenge-dataset\val_videos/val_1.mp4)
+2026-08-08 15:42:53 | INFO |     sample 1/1 → VA=0
+2026-08-08 15:42:55 | INFO |     -> {'id': 1, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 15:42:55 | INFO | [3/12] Universal Design for Learning (UDL) (challenge-dataset\val_videos/val_2.mp4)
+2026-08-08 15:43:23 | INFO |     sample 1/1 → VA=0
+2026-08-08 15:43:24 | INFO |     -> {'id': 2, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 15:43:24 | INFO | [4/12] object-oriented analysis and design (OOAD) (challenge-dataset\val_videos/val_3.mp4)
+2026-08-08 15:43:51 | INFO |     sample 1/1 → VA=0
+2026-08-08 15:43:53 | INFO |     -> {'id': 3, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 15:43:53 | INFO | [5/12] symbolic computation (challenge-dataset\val_videos/val_4.mp4)
+2026-08-08 15:44:23 | INFO |     sample 1/1 → VA=0
+2026-08-08 15:44:25 | INFO |     -> {'id': 4, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 0, 'VC': 0, 'VE': 0}
+2026-08-08 15:44:25 | INFO | [6/12] firewall (challenge-dataset\val_videos/val_5.mp4)
+2026-08-08 15:44:54 | INFO |     sample 1/1 → VA=2
+2026-08-08 15:44:55 | INFO |     -> {'id': 5, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 15:44:55 | INFO | [7/12] list (challenge-dataset\val_videos/val_6.mp4)
+2026-08-08 15:45:25 | INFO |     sample 1/1 → VA=2
+2026-08-08 15:45:27 | INFO |     -> {'id': 6, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 2, 'VC': 0, 'VE': 0}
+2026-08-08 15:45:27 | INFO | [8/12] Token (in AI/LLMs) (challenge-dataset\val_videos/val_7.mp4)
+2026-08-08 15:46:02 | INFO |     sample 1/1 → VA=1
+2026-08-08 15:46:03 | INFO |     -> {'id': 7, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 15:46:03 | INFO | [9/12] Boolean logic (challenge-dataset\val_videos/val_8.mp4)
+2026-08-08 15:46:28 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:46:30 | INFO |     -> {'id': 8, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:46:30 | INFO | [10/12] Parallel computing (challenge-dataset\val_videos/val_9.mp4)
+2026-08-08 15:46:55 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:46:56 | INFO |     -> {'id': 9, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:46:56 | INFO | [11/12] Cloud computing (challenge-dataset\val_videos/val_10.mp4)
+2026-08-08 15:47:38 | INFO |     sample 1/1 → VA=1
+2026-08-08 15:47:40 | INFO |     -> {'id': 10, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 1, 'VC': 0, 'VE': 0}
+2026-08-08 15:47:40 | INFO | [12/12] Internet Protocol (IP) address (challenge-dataset\val_videos/val_11.mp4)
+2026-08-08 15:48:14 | INFO |     sample 1/1 → VA=3
+2026-08-08 15:48:16 | INFO |     -> {'id': 11, 'TCC': 0, 'MS': 0, 'M': 0, 'VA': 3, 'VC': 0, 'VE': 0}
+2026-08-08 15:48:20 | INFO | Wrote CSV submission: output/submission_VA_video_validation.csv
+2026-08-08 15:48:20 | INFO | Preview:
+ id  TCC  MS  M  VC  VA  VE
+  0    0   0  0   0   2   0
+  1    0   0  0   0   0   0
+  2    0   0  0   0   0   0
+  3    0   0  0   0   0   0
+  4    0   0  0   0   0   0
+2026-08-08 15:48:24 | INFO | ========================================
+2026-08-08 15:48:24 | INFO |     metric    tau-b      rho
+2026-08-08 15:48:24 | INFO |         VA    0.386    0.435
+2026-08-08 15:48:24 | INFO | Completed run. Log path: output\logs\gemini-3.1-pro-preview_validation_20260808_154004.log
